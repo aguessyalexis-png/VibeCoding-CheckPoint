@@ -39,7 +39,7 @@ function Index() {
       </div>
 
       <main className="relative z-10 mx-auto flex min-h-screen w-full max-w-[90rem] items-center px-6 py-8 sm:px-12 sm:py-12 lg:px-16">
-        <div className="flex min-h-[calc(100vh-4rem)] w-full flex-col justify-between border-y border-border py-7 sm:min-h-[calc(100vh-6rem)] sm:py-9">
+        <div className="flex min-h-[calc(100vh-4rem)] w-full flex-col justify-between border-y border-border py-4 sm:min-h-[calc(100vh-6rem)] sm:py-9">
           <div className="hero-rise flex items-center justify-between" style={{ animationDelay: "60ms" }}>
             <div className="flex items-center gap-4">
               <span className="h-px w-10 bg-primary shadow-glow sm:w-16" />
@@ -50,16 +50,16 @@ function Index() {
             <span className="hidden size-2 border border-primary/70 sm:block" aria-hidden="true" />
           </div>
 
-          <div className="relative py-12 sm:py-16 lg:py-8">
+          <div className="relative py-8 sm:py-16 lg:py-8">
             <h1
-              className="hero-rise relative z-10 flex flex-col font-display text-[4.4rem] font-extrabold leading-[0.76] uppercase sm:text-[7.5rem] lg:text-[10.8rem] xl:text-[12.2rem]"
+              className="hero-rise relative z-10 flex flex-col font-display text-[3.3rem] font-extrabold leading-[0.76] uppercase sm:text-[6.8rem] lg:text-[8.8rem] xl:text-[10.5rem]"
               style={{ animationDelay: "140ms" }}
             >
               <span className="text-foreground">ALEXIS</span>
-              <span className="text-glow ml-[8%] text-primary sm:ml-[12%] lg:ml-[16%]">AGUESSY</span>
+              <span className="text-glow ml-[4%] text-primary sm:ml-[10%] lg:ml-[14%]">AGUESSY</span>
             </h1>
 
-            <div className="mt-12 flex flex-col gap-9 sm:mt-16 lg:flex-row lg:items-end lg:justify-between">
+            <div className="mt-8 flex flex-col gap-6 sm:mt-16 sm:gap-9 lg:flex-row lg:items-end lg:justify-between">
               <p
                 className="hero-rise max-w-[36rem] border-l border-primary/50 pl-5 text-sm leading-7 text-muted-foreground sm:pl-6 sm:text-base sm:leading-8"
                 style={{ animationDelay: "260ms" }}
