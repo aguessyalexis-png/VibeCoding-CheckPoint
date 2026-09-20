@@ -77,13 +77,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Léo Marchand — Portfolio" },
+      { title: "Alex Aguessy — Portfolio" },
       {
         name: "description",
         content:
-          "Portfolio de Léo Marchand, développeur créatif et designer d'interfaces cinétiques.",
+          "Portfolio de Alex Aguessy, développeur créatif et designer d'interfaces cinétiques.",
       },
-      { property: "og:title", content: "Léo Marchand — Portfolio" },
+      { property: "og:title", content: "Alex Aguessy — Portfolio" },
       {
         property: "og:description",
         content:
