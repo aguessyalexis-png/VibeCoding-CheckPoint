@@ -3,13 +3,13 @@ import { createFileRoute } from "@tanstack/react-router";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Alex Aguessy — Développeur créatif & designer" },
+      { title: "Alexis Aguessy — Développeur créatif & designer" },
       {
         name: "description",
         content:
-          "Portfolio de Alex Aguessy, développeur créatif et designer. Interfaces cinétiques où mouvement, lumière et typographie se rencontrent.",
+          "Portfolio de Alexis Aguessy, développeur créatif et designer. Interfaces cinétiques où mouvement, lumière et typographie se rencontrent.",
       },
-      { property: "og:title", content: "Alex Aguessy — Développeur créatif & designer" },
+      { property: "og:title", content: "Alexis Aguessy — Développeur créatif & designer" },
       {
         property: "og:description",
         content:
@@ -60,7 +60,7 @@ function Index() {
             className="hero-rise font-display text-[16vw] leading-[0.95] tracking-tight text-foreground sm:text-[13vw] lg:text-[9.5rem]"
             style={{ animationDelay: "160ms" }}
           >
-            ALEX{" "}
+            ALEXIS{" "}
             <span className="text-primary">AGUESSY</span>
           </h1>
 
