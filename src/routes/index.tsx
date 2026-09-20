@@ -52,7 +52,7 @@ function Index() {
 
           <div className="relative py-8 sm:py-16 lg:py-8">
             <h1
-              className="hero-rise relative z-10 flex flex-col font-display text-[2.8rem] font-extrabold leading-[0.78] uppercase sm:text-[6.8rem] sm:leading-[0.76] lg:text-[8.8rem] xl:text-[10.5rem]"
+              className="hero-rise relative z-10 flex flex-col font-display text-[2.5rem] font-extrabold leading-[0.8] uppercase sm:text-[6.8rem] sm:leading-[0.76] lg:text-[8.8rem] xl:text-[10.5rem]"
               style={{ animationDelay: "140ms" }}
             >
               <span className="text-foreground">ALEXIS</span>
