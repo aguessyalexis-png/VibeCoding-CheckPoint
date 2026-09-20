@@ -138,6 +138,23 @@
   }
 }
 
+/* Soft felted gradient: deep ink fading into night blue */
+.bg-feathered {
+  background-color: var(--background);
+  background-image:
+    radial-gradient(
+      90% 70% at 85% 8%,
+      oklch(0.24 0.05 252 / 70%) 0%,
+      oklch(0.24 0.05 252 / 0%) 55%
+    ),
+    linear-gradient(
+      168deg,
+      oklch(0.13 0.02 262) 0%,
+      oklch(0.17 0.035 256) 55%,
+      oklch(0.22 0.055 248) 100%
+    );
+}
+
 .drift-a {
   animation: drift 11s ease-in-out infinite;
 }

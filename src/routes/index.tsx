@@ -24,12 +24,12 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
-    <div className="relative min-h-screen w-full overflow-hidden bg-background font-body text-foreground antialiased">
+    <div className="bg-feathered relative min-h-screen w-full overflow-hidden font-body text-foreground antialiased">
       {/* Cool gradient light */}
       <div className="pointer-events-none absolute inset-0" aria-hidden="true">
-        <div className="drift-a absolute -top-40 -left-24 h-[70vh] w-[70vh] rounded-full bg-primary/25 blur-[120px]" />
-        <div className="drift-b absolute top-1/3 -right-24 h-[60vh] w-[60vh] rounded-full bg-glow-blue/25 blur-[130px]" />
-        <div className="drift-a absolute bottom-[-10%] left-1/4 h-[50vh] w-[50vh] rounded-full bg-glow-pink/15 blur-[120px]" />
+        <div className="drift-a absolute -top-40 -left-24 h-[70vh] w-[70vh] rounded-full bg-primary/10 blur-[140px]" />
+        <div className="drift-b absolute top-1/3 -right-24 h-[60vh] w-[60vh] rounded-full bg-glow-blue/10 blur-[150px]" />
+        <div className="drift-a absolute bottom-[-10%] left-1/4 h-[50vh] w-[50vh] rounded-full bg-glow-pink/5 blur-[140px]" />
       </div>
 
       {/* Kinetic frosted-glass panels */}
@@ -37,10 +37,10 @@ function Index() {
         className="pointer-events-none absolute inset-0 overflow-hidden"
         aria-hidden="true"
       >
-        <div className="drift-b absolute -top-1/4 right-[6%] h-[150%] w-44 rotate-[24deg] border border-white/10 bg-glass shadow-[0_0_80px_rgba(47,224,192,0.15)] backdrop-blur-md" />
-        <div className="drift-a absolute top-[10%] right-[24%] h-[130%] w-24 rotate-[24deg] border border-primary/20 bg-glass backdrop-blur-sm" />
-        <div className="drift-b absolute -top-1/4 left-[30%] h-[150%] w-32 rotate-[24deg] border border-white/10 bg-glass backdrop-blur-md" />
-        <div className="drift-a absolute top-[20%] left-[6%] h-[120%] w-16 rotate-[24deg] border border-white/10 bg-glass backdrop-blur-sm" />
+        <div className="drift-b absolute -top-1/4 right-[6%] h-[150%] w-44 rotate-[24deg] border border-white/[0.06] bg-glass/60 shadow-[0_0_80px_rgba(47,224,192,0.07)] backdrop-blur-md" />
+        <div className="drift-a absolute top-[10%] right-[24%] h-[130%] w-24 rotate-[24deg] border border-primary/10 bg-glass/40 backdrop-blur-sm" />
+        <div className="drift-b absolute -top-1/4 left-[30%] h-[150%] w-32 rotate-[24deg] border border-white/[0.05] bg-glass/40 backdrop-blur-md" />
+        <div className="drift-a absolute top-[20%] left-[6%] h-[120%] w-16 rotate-[24deg] border border-white/[0.05] bg-glass/40 backdrop-blur-sm" />
       </div>
 
       {/* Hero */}
