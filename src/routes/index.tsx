@@ -60,7 +60,7 @@ function Index() {
             className="hero-rise font-display text-[18vw] leading-[0.82] tracking-tight text-foreground sm:text-[15vw] lg:text-[11rem]"
             style={{ animationDelay: "160ms" }}
           >
-            LÉO
+            LÉO{" "}
             <span className="text-primary">MARCHAND</span>
           </h1>
 
