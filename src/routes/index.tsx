@@ -47,7 +47,7 @@ function Index() {
       <main className="relative z-10 flex min-h-screen flex-col justify-center px-6 py-16 sm:px-12 lg:px-20">
         <div className="max-w-5xl">
           <div
-            className="hero-rise mb-8 flex items-center gap-3"
+            className="hero-rise mb-12 flex items-center gap-3"
             style={{ animationDelay: "80ms" }}
           >
             <span className="h-px w-10 bg-primary" />
@@ -57,7 +57,7 @@ function Index() {
           </div>
 
           <h1
-            className="hero-rise font-display text-[18vw] leading-[0.82] tracking-tight text-foreground sm:text-[15vw] lg:text-[11rem]"
+            className="hero-rise font-display text-[16vw] leading-[0.95] tracking-tight text-foreground sm:text-[13vw] lg:text-[9.5rem]"
             style={{ animationDelay: "160ms" }}
           >
             LÉO{" "}
