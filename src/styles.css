@@ -41,56 +41,57 @@
   --color-glow-blue: var(--glow-blue);
   --color-glow-pink: var(--glow-pink);
   --color-glass: var(--glass);
+  --shadow-glow: 0 0 28px color-mix(in oklab, var(--primary) 38%, transparent);
 }
 
 :root {
-  --radius: 1rem;
-  --background: oklch(0.16 0.028 262);
-  --foreground: oklch(0.955 0.015 255);
+  --radius: 0.5rem;
+  --background: oklch(0.105 0.018 255);
+  --foreground: oklch(0.965 0.012 240);
   --card: oklch(1 0 0 / 5%);
   --card-foreground: oklch(0.955 0.015 255);
   --popover: oklch(0.21 0.032 262);
   --popover-foreground: oklch(0.955 0.015 255);
-  --primary: oklch(0.82 0.15 175);
-  --primary-foreground: oklch(0.16 0.028 262);
+  --primary: oklch(0.84 0.16 178);
+  --primary-foreground: oklch(0.105 0.018 255);
   --secondary: oklch(1 0 0 / 6%);
   --secondary-foreground: oklch(0.955 0.015 255);
   --muted: oklch(1 0 0 / 6%);
-  --muted-foreground: oklch(0.72 0.02 255);
-  --accent: oklch(0.62 0.21 266);
+  --muted-foreground: oklch(0.7 0.025 245);
+  --accent: oklch(0.62 0.2 252);
   --accent-foreground: oklch(0.955 0.015 255);
   --destructive: oklch(0.65 0.22 20);
   --destructive-foreground: oklch(0.955 0.015 255);
-  --border: oklch(1 0 0 / 10%);
+  --border: oklch(0.84 0.09 200 / 13%);
   --input: oklch(1 0 0 / 15%);
   --ring: oklch(0.82 0.15 175);
-  --glow-blue: oklch(0.62 0.21 266);
-  --glow-pink: oklch(0.66 0.24 3);
+  --glow-blue: oklch(0.62 0.2 252);
+  --glow-pink: oklch(0.84 0.16 178);
   --glass: oklch(1 0 0 / 5%);
 }
 
 .dark {
-  --background: oklch(0.16 0.028 262);
-  --foreground: oklch(0.955 0.015 255);
+  --background: oklch(0.105 0.018 255);
+  --foreground: oklch(0.965 0.012 240);
   --card: oklch(1 0 0 / 5%);
   --card-foreground: oklch(0.955 0.015 255);
   --popover: oklch(0.21 0.032 262);
   --popover-foreground: oklch(0.955 0.015 255);
-  --primary: oklch(0.82 0.15 175);
-  --primary-foreground: oklch(0.16 0.028 262);
+  --primary: oklch(0.84 0.16 178);
+  --primary-foreground: oklch(0.105 0.018 255);
   --secondary: oklch(1 0 0 / 6%);
   --secondary-foreground: oklch(0.955 0.015 255);
   --muted: oklch(1 0 0 / 6%);
-  --muted-foreground: oklch(0.72 0.02 255);
-  --accent: oklch(0.62 0.21 266);
+  --muted-foreground: oklch(0.7 0.025 245);
+  --accent: oklch(0.62 0.2 252);
   --accent-foreground: oklch(0.955 0.015 255);
   --destructive: oklch(0.65 0.22 20);
   --destructive-foreground: oklch(0.955 0.015 255);
-  --border: oklch(1 0 0 / 10%);
+  --border: oklch(0.84 0.09 200 / 13%);
   --input: oklch(1 0 0 / 15%);
   --ring: oklch(0.82 0.15 175);
-  --glow-blue: oklch(0.62 0.21 266);
-  --glow-pink: oklch(0.66 0.24 3);
+  --glow-blue: oklch(0.62 0.2 252);
+  --glow-pink: oklch(0.84 0.16 178);
   --glass: oklch(1 0 0 / 5%);
 }
 
@@ -138,21 +139,86 @@
   }
 }
 
+@keyframes drift-slow {
+  0%,
+  100% {
+    transform: rotate(24deg) translateX(0);
+  }
+  50% {
+    transform: rotate(24deg) translateX(18px);
+  }
+}
+
+@keyframes drift-reverse {
+  0%,
+  100% {
+    transform: rotate(45deg) translate(0, 0);
+  }
+  50% {
+    transform: rotate(45deg) translate(-12px, -12px);
+  }
+}
+
 /* Soft felted gradient: deep ink fading into night blue */
 .bg-feathered {
   background-color: var(--background);
   background-image:
     radial-gradient(
-      90% 70% at 85% 8%,
-      oklch(0.24 0.05 252 / 70%) 0%,
-      oklch(0.24 0.05 252 / 0%) 55%
+      80% 65% at 82% 22%,
+      color-mix(in oklab, var(--glow-blue) 18%, transparent) 0%,
+      transparent 58%
+    ),
+    radial-gradient(
+      55% 45% at 10% 85%,
+      color-mix(in oklab, var(--primary) 7%, transparent) 0%,
+      transparent 68%
     ),
     linear-gradient(
-      168deg,
-      oklch(0.13 0.02 262) 0%,
-      oklch(0.17 0.035 256) 55%,
-      oklch(0.22 0.055 248) 100%
+      145deg,
+      var(--background) 0%,
+      color-mix(in oklab, var(--background) 82%, var(--glow-blue)) 62%,
+      color-mix(in oklab, var(--background) 90%, var(--primary)) 100%
     );
+}
+
+.hero-ambient {
+  background:
+    radial-gradient(circle at 72% 40%, color-mix(in oklab, var(--primary) 10%, transparent), transparent 24%),
+    radial-gradient(circle at 88% 80%, color-mix(in oklab, var(--glow-blue) 14%, transparent), transparent 28%);
+}
+
+.hero-grid {
+  opacity: 0.16;
+  background-image:
+    linear-gradient(var(--border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--border) 1px, transparent 1px);
+  background-size: 7rem 7rem;
+  mask-image: linear-gradient(to right, transparent 8%, transparent 42%, black 100%);
+}
+
+.text-glow {
+  text-shadow: 0 0 42px color-mix(in oklab, var(--primary) 22%, transparent);
+}
+
+.premium-cta {
+  box-shadow:
+    0 0 0 1px color-mix(in oklab, var(--primary) 14%, transparent),
+    0 12px 36px color-mix(in oklab, var(--primary) 20%, transparent),
+    inset 0 1px 0 color-mix(in oklab, var(--foreground) 28%, transparent);
+}
+
+.premium-cta:hover {
+  box-shadow:
+    0 0 0 1px color-mix(in oklab, var(--foreground) 12%, transparent),
+    0 16px 42px color-mix(in oklab, var(--primary) 24%, transparent);
+}
+
+.drift-slow {
+  animation: drift-slow 14s ease-in-out infinite;
+}
+
+.drift-reverse {
+  animation: drift-reverse 18s ease-in-out infinite;
 }
 
 .drift-a {
@@ -165,4 +231,14 @@
 
 .hero-rise {
   animation: hero-rise 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .drift-a,
+  .drift-b,
+  .drift-slow,
+  .drift-reverse,
+  .hero-rise {
+    animation: none;
+  }
 }

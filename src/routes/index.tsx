@@ -25,47 +25,39 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <div className="bg-feathered relative min-h-screen w-full overflow-hidden font-body text-foreground antialiased">
-      {/* Cool gradient light */}
-      <div className="pointer-events-none absolute inset-0" aria-hidden="true">
-        <div className="drift-a absolute -top-40 -left-24 h-[70vh] w-[70vh] rounded-full bg-primary/10 blur-[140px]" />
-        <div className="drift-b absolute top-1/3 -right-24 h-[60vh] w-[60vh] rounded-full bg-glow-blue/10 blur-[150px]" />
-        <div className="drift-a absolute bottom-[-10%] left-1/4 h-[50vh] w-[50vh] rounded-full bg-glow-pink/5 blur-[140px]" />
+      <div className="hero-ambient pointer-events-none absolute inset-0" aria-hidden="true" />
+      <div className="hero-grid pointer-events-none absolute inset-0" aria-hidden="true" />
+
+      <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
+        <div className="drift-slow absolute -top-[36%] right-[8%] h-[150%] w-px rotate-[24deg] bg-border" />
+        <div className="drift-slow absolute -top-[18%] right-[24%] h-[140%] w-32 rotate-[24deg] border-x border-border bg-glass/20 backdrop-blur-sm" />
+        <div className="drift-reverse absolute -bottom-[48%] right-[2%] size-[38rem] rotate-45 border border-primary/10" />
+        <div className="drift-reverse absolute -bottom-[41%] right-[6%] size-[31rem] rotate-45 border border-accent/10" />
+        <div className="absolute right-[8%] top-[18%] hidden size-2 bg-primary shadow-glow lg:block" />
       </div>
 
-      {/* Kinetic frosted-glass panels */}
-      <div
-        className="pointer-events-none absolute inset-0 overflow-hidden"
-        aria-hidden="true"
-      >
-        <div className="drift-b absolute -top-1/4 right-[6%] h-[150%] w-44 rotate-[24deg] border border-white/[0.06] bg-glass/60 shadow-[0_0_80px_rgba(47,224,192,0.07)] backdrop-blur-md" />
-        <div className="drift-a absolute top-[10%] right-[24%] h-[130%] w-24 rotate-[24deg] border border-primary/10 bg-glass/40 backdrop-blur-sm" />
-        <div className="drift-b absolute -top-1/4 left-[30%] h-[150%] w-32 rotate-[24deg] border border-white/[0.05] bg-glass/40 backdrop-blur-md" />
-        <div className="drift-a absolute top-[20%] left-[6%] h-[120%] w-16 rotate-[24deg] border border-white/[0.05] bg-glass/40 backdrop-blur-sm" />
-      </div>
-
-      {/* Hero */}
-      <main className="relative z-10 flex min-h-screen flex-col justify-center px-6 py-16 sm:px-12 lg:px-20">
-        <div className="max-w-5xl">
+      <main className="relative z-10 flex min-h-screen items-center px-6 py-12 sm:px-12 sm:py-16 lg:px-20 xl:px-28">
+        <div className="w-full max-w-[76rem]">
           <div
-            className="hero-rise mb-12 flex items-center gap-3"
+            className="hero-rise mb-7 flex items-center gap-4 sm:mb-10"
             style={{ animationDelay: "80ms" }}
           >
-            <span className="h-px w-10 bg-primary" />
-            <span className="text-xs font-semibold uppercase tracking-[0.35em] text-primary">
+            <span className="h-px w-12 bg-primary shadow-glow sm:w-16" />
+            <span className="text-[0.625rem] font-semibold uppercase tracking-[0.32em] text-primary sm:text-xs">
               Développeur créatif &amp; designer
             </span>
           </div>
 
           <h1
-            className="hero-rise font-display text-[16vw] leading-[0.95] tracking-tight text-foreground sm:text-[13vw] lg:text-[9.5rem]"
+            className="hero-rise font-display text-[4.25rem] leading-[0.88] uppercase sm:text-[7rem] lg:text-[9.5rem] xl:text-[11rem]"
             style={{ animationDelay: "160ms" }}
           >
-            ALEXIS{" "}
-            <span className="text-primary">AGUESSY</span>
+            <span className="block text-foreground sm:inline">ALEXIS</span>{" "}
+            <span className="text-primary text-glow">AGUESSY</span>
           </h1>
 
           <p
-            className="hero-rise mt-8 max-w-xl text-lg leading-relaxed text-muted-foreground sm:text-xl"
+            className="hero-rise mt-8 max-w-[37rem] border-l border-primary/40 pl-5 text-base leading-7 text-muted-foreground sm:mt-10 sm:pl-6 sm:text-lg sm:leading-8"
             style={{ animationDelay: "280ms" }}
           >
             Je crée des interfaces cinétiques et performantes où mouvement,
@@ -74,19 +66,19 @@ function Index() {
           </p>
 
           <div
-            className="hero-rise mt-12 flex flex-wrap items-center gap-5"
+            className="hero-rise mt-9 flex flex-col items-start gap-5 sm:mt-12 sm:flex-row sm:items-center sm:gap-7"
             style={{ animationDelay: "400ms" }}
           >
             <a
               href="#projets"
-              className="group inline-flex items-center gap-3 rounded-full bg-primary px-8 py-4 text-sm font-semibold uppercase tracking-[0.15em] text-primary-foreground transition-colors duration-300 hover:bg-foreground hover:text-background"
+              className="premium-cta group inline-flex h-14 items-center justify-center gap-5 rounded-md border border-primary/60 bg-primary px-7 text-xs font-semibold uppercase tracking-[0.18em] text-primary-foreground transition-all duration-300 hover:-translate-y-0.5 hover:bg-foreground hover:text-background focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
             >
               Voir mes projets
-              <span className="transition-transform duration-300 group-hover:translate-x-1">
+              <span aria-hidden="true" className="text-base transition-transform duration-300 group-hover:translate-x-1">
                 &#8594;
               </span>
             </a>
-            <span className="text-sm font-medium text-muted-foreground/60">
+            <span className="text-xs font-medium text-muted-foreground/60 sm:text-sm">
               Disponible en freelance &#183; 2026
             </span>
           </div>
