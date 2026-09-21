@@ -29,7 +29,7 @@ function Index() {
       <div className="motion-line motion-line-one" aria-hidden="true" />
       <div className="motion-line motion-line-two" aria-hidden="true" />
 
-      <main className="relative z-10 mx-auto flex min-h-screen w-full max-w-[96rem] flex-col px-6 py-7 sm:px-10 lg:px-16 lg:py-10">
+      <main className="relative z-10 mx-auto flex min-h-screen w-full max-w-[96rem] flex-col px-6 py-6 sm:px-10 lg:px-16 lg:py-10">
         <header className="hero-rise flex items-start justify-between border-b border-border pb-5">
           <div className="flex items-center gap-3">
             <span className="size-1.5 bg-primary shadow-glow" aria-hidden="true" />
@@ -52,7 +52,7 @@ function Index() {
             <p className="hero-rise mb-5 text-[0.6rem] font-semibold uppercase tracking-[0.28em] text-accent sm:mb-7" style={{ animationDelay: "80ms" }}>
               Code <span className="mx-2 text-border">/</span> Design <span className="mx-2 text-border">/</span> Motion
             </p>
-            <h1 className="hero-rise flex flex-col font-display text-[3rem] font-extrabold leading-[0.82] uppercase sm:text-[6rem] lg:text-[7.4rem] xl:text-[8.5rem]" style={{ animationDelay: "140ms" }}>
+            <h1 className="hero-rise flex flex-col font-display text-[2.65rem] font-extrabold leading-[0.84] uppercase sm:text-[6rem] sm:leading-[0.82] lg:text-[7.4rem] xl:text-[8.5rem]" style={{ animationDelay: "140ms" }}>
               <span className="text-foreground">ALEXIS</span>
               <span className="name-gradient">AGUESSY</span>
             </h1>
