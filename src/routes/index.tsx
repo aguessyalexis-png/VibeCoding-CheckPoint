@@ -48,11 +48,11 @@ function Index() {
         </header>
 
         <div className="grid flex-1 items-center gap-12 py-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 lg:py-12">
-          <section className="relative z-10">
+          <section className="relative z-10 min-w-0">
             <p className="hero-rise mb-5 text-[0.6rem] font-semibold uppercase tracking-[0.28em] text-accent sm:mb-7" style={{ animationDelay: "80ms" }}>
               Code <span className="mx-2 text-border">/</span> Design <span className="mx-2 text-border">/</span> Motion
             </p>
-            <h1 className="hero-rise flex flex-col font-display text-[3.6rem] font-extrabold leading-[0.82] uppercase sm:text-[6rem] lg:text-[7.4rem] xl:text-[8.5rem]" style={{ animationDelay: "140ms" }}>
+            <h1 className="hero-rise flex flex-col font-display text-[3rem] font-extrabold leading-[0.82] uppercase sm:text-[6rem] lg:text-[7.4rem] xl:text-[8.5rem]" style={{ animationDelay: "140ms" }}>
               <span className="text-foreground">ALEXIS</span>
               <span className="name-gradient">AGUESSY</span>
             </h1>
