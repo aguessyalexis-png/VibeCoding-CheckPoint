@@ -107,7 +107,7 @@
   }
 }
 
-/* Kinetic background motion */
+/* Premium creative developer hero */
 @keyframes drift {
   0%,
   100% {
@@ -285,6 +285,105 @@
 .hero-rise {
   animation: hero-rise 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) both;
 }
+
+.studio-canvas {
+  background: var(--background);
+  background-image: linear-gradient(145deg, var(--background) 0%, color-mix(in oklab, var(--background) 88%, var(--glow-blue)) 100%);
+}
+
+.studio-light {
+  background:
+    radial-gradient(circle at 78% 48%, color-mix(in oklab, var(--glow-blue) 18%, transparent), transparent 29%),
+    radial-gradient(circle at 62% 76%, color-mix(in oklab, var(--primary) 8%, transparent), transparent 24%);
+}
+
+.name-gradient {
+  color: var(--primary);
+  text-shadow: 0 0 52px color-mix(in oklab, var(--primary) 18%, transparent);
+}
+
+.nav-link {
+  transition: color 180ms ease;
+}
+
+.nav-link:hover {
+  color: var(--primary);
+}
+
+.premium-cta {
+  position: relative;
+  transition: transform 240ms ease, box-shadow 240ms ease;
+}
+
+.premium-cta .cta-fill {
+  background: linear-gradient(105deg, color-mix(in oklab, var(--primary) 18%, transparent), color-mix(in oklab, var(--accent) 25%, transparent));
+  transition: opacity 240ms ease;
+}
+
+.premium-cta:hover {
+  transform: translateY(-2px);
+}
+
+.motion-line {
+  position: absolute;
+  pointer-events: none;
+  height: 1px;
+  width: 32rem;
+  background: linear-gradient(90deg, transparent, color-mix(in oklab, var(--accent) 35%, transparent), transparent);
+  transform: rotate(-28deg);
+  opacity: 0.55;
+}
+
+.motion-line-one { right: -6rem; top: 20%; }
+.motion-line-two { right: 8%; bottom: 14%; width: 20rem; opacity: 0.25; }
+
+.visual-orbit {
+  position: absolute;
+  inset: 11%;
+  border: 1px solid color-mix(in oklab, var(--accent) 25%, transparent);
+  border-radius: 50%;
+  transform: rotate(-18deg);
+  box-shadow: 0 0 70px color-mix(in oklab, var(--glow-blue) 10%, transparent);
+}
+
+.code-window {
+  position: absolute;
+  inset: 20% 8% 18% 12%;
+  border: 1px solid color-mix(in oklab, var(--primary) 28%, transparent);
+  background: color-mix(in oklab, var(--background) 86%, transparent);
+  box-shadow: 0 32px 80px color-mix(in oklab, var(--background) 75%, transparent), 0 0 60px color-mix(in oklab, var(--accent) 12%, transparent);
+  backdrop-filter: blur(18px);
+  transform: perspective(900px) rotateY(-8deg) rotateX(3deg);
+}
+
+.window-bar {
+  display: flex;
+  gap: 0.4rem;
+  padding: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.window-bar span { width: 0.35rem; height: 0.35rem; border-radius: 50%; background: var(--muted-foreground); opacity: 0.45; }
+.window-bar span:first-child { background: var(--primary); opacity: 1; box-shadow: var(--shadow-glow); }
+
+.code-body { display: flex; flex-direction: column; gap: 0.9rem; padding: 2rem; opacity: 0.68; }
+.code-row { display: block; height: 2px; background: linear-gradient(90deg, var(--accent), color-mix(in oklab, var(--primary) 45%, transparent)); }
+.code-symbol { position: absolute; right: 1.8rem; bottom: 1.3rem; font-family: var(--font-display); font-size: 3.4rem; font-weight: 800; color: var(--primary); text-shadow: var(--shadow-glow); }
+
+.ui-panel { position: absolute; z-index: 2; display: flex; gap: 0.45rem; border: 1px solid var(--border); background: color-mix(in oklab, var(--background) 82%, transparent); padding: 1rem; box-shadow: 0 20px 50px color-mix(in oklab, var(--background) 70%, transparent); backdrop-filter: blur(12px); }
+.ui-panel span { display: block; height: 0.3rem; background: var(--muted-foreground); opacity: 0.38; }
+.ui-panel-top { right: 0; top: 16%; width: 10rem; flex-direction: column; transform: rotate(3deg); }
+.ui-panel-top span:nth-child(2) { width: 70%; background: var(--primary); opacity: 0.7; }
+.ui-panel-bottom { left: 2%; bottom: 12%; width: 8rem; }
+.ui-panel-bottom span:first-child { width: 65%; background: var(--accent); opacity: 0.8; }
+.ui-panel-bottom span:last-child { flex: 1; }
+
+.visual-node { position: absolute; z-index: 3; width: 0.4rem; height: 0.4rem; background: var(--primary); box-shadow: var(--shadow-glow); }
+.visual-node-one { right: 7%; top: 46%; }
+.visual-node-two { left: 14%; top: 18%; background: var(--accent); }
+
+.social-link { display: inline-flex; width: 1.8rem; height: 1.8rem; align-items: center; justify-content: center; border: 1px solid var(--border); font-size: 0.5rem; font-weight: 700; text-transform: uppercase; color: var(--muted-foreground); transition: border-color 180ms ease, color 180ms ease; }
+.social-link:hover { border-color: var(--primary); color: var(--primary); }
 
 @media (prefers-reduced-motion: reduce) {
   .drift-a,
