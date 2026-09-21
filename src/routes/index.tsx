@@ -30,21 +30,13 @@ function Index() {
       <div className="motion-line motion-line-two" aria-hidden="true" />
 
       <main className="relative z-10 mx-auto flex min-h-screen w-full max-w-[96rem] flex-col px-6 py-6 sm:px-10 lg:px-16 lg:py-10">
-        <header className="hero-rise flex items-start justify-between border-b border-border pb-5">
+        <header className="hero-rise flex items-center border-b border-border pb-5">
           <div className="flex items-center gap-3">
             <span className="size-1.5 bg-primary shadow-glow" aria-hidden="true" />
             <span className="text-[0.56rem] font-semibold uppercase tracking-[0.28em] text-primary sm:text-[0.62rem]">
               Développeur créatif &amp; designer
             </span>
           </div>
-          <nav aria-label="Navigation principale" className="hidden md:block">
-            <ul className="flex gap-8 text-[0.58rem] font-semibold uppercase tracking-[0.2em] text-muted-foreground">
-              <li><a className="nav-link text-foreground" href="#accueil">Accueil</a></li>
-              <li><a className="nav-link" href="#projets">Projets</a></li>
-              <li><a className="nav-link" href="#a-propos">À propos</a></li>
-              <li><a className="nav-link" href="#contact">Contact</a></li>
-            </ul>
-          </nav>
         </header>
 
         <div className="grid flex-1 items-center gap-12 py-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 lg:py-12">
